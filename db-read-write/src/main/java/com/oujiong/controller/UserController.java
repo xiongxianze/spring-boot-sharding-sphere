@@ -24,7 +24,7 @@ public class UserController {
     /**
      * @Description: 保存用户
      */
-    @PostMapping("save-user")
+    @GetMapping("save-user")
     public Object saveUser() {
         return userService.saveOne(new User("小小", "女", 3));
     }
